@@ -1,0 +1,8 @@
+# .air.toml
+
+[build]
+bin = "tmp/main"        # Binary name for the compiled app
+cmd = "go build -o ./tmp/main ."  # Build command
+log = "air.log"         # Log output file
+exclude_dir = ["tmp"]   # Directories to exclude from watching
+include_ext = ["go", "tpl", "html", "js", "css"]  # File extensions to watch
